@@ -39,7 +39,7 @@ OBJECTFILES= \
 
 
 # C Compiler Flags
-CFLAGS=
+CFLAGS=`pkg-config --cflags glib-2.0` 
 
 # CC Compiler Flags
 CCFLAGS=
@@ -52,7 +52,7 @@ FFLAGS=
 ASFLAGS=
 
 # Link Libraries and Options
-LDLIBSOPTIONS=-lcrypto -lssl
+LDLIBSOPTIONS=-lcrypto -lssl `pkg-config --libs glib-2.0`  
 
 # Build Targets
 .build-conf: ${BUILD_SUBPROJECTS}

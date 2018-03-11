@@ -38,10 +38,11 @@
       <compileType>
         <cTool>
           <standard>10</standard>
+          <commandLine>`pkg-config --cflags glib-2.0`</commandLine>
         </cTool>
         <linkerTool>
           <linkerLibItems>
-            <linkerOptionItem>-lcrypto -lssl</linkerOptionItem>
+            <linkerOptionItem>-lcrypto -lssl `pkg-config --libs glib-2.0`</linkerOptionItem>
           </linkerLibItems>
         </linkerTool>
       </compileType>

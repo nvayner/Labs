@@ -27,6 +27,7 @@
       <runprofile version="9">
         <runcommandpicklist>
           <runcommandpicklistitem>"${OUTPUT_PATH}"</runcommandpicklistitem>
+          <runcommandpicklistitem>"${OUTPUT_PATH}" /home/nikita</runcommandpicklistitem>
           <runcommandpicklistitem>"${OUTPUT_PATH}" /home/nikita/Labs</runcommandpicklistitem>
         </runcommandpicklist>
         <runcommand>"${OUTPUT_PATH}" /home/nikita/Labs</runcommand>
